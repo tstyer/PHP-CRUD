@@ -1,0 +1,9 @@
+:root {
+    --text-font: 'Courier New', 'monospace';
+
+}
+
+.navbar {
+    background-color: blueviolet;
+    font-family: var(--text-font);
+}
