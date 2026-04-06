@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Add New Row</a>
         </li>
@@ -33,19 +33,28 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>PHONE</th>
+      <th>JOIN DATE</th>
+      <th>ACTION</th>
     </tr>
   </thead>
   <tbody>
+    <!--To update a table with php in real time, you need to rap the table that is being updated with this code-->
+    <?php
+    include 'connection.php';
+    $sql = "SELECT * FROM ";
     <tr>
-      <th scope="row">1</th>
+      <th>1</th>
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
+      <td>Otto</td>
+      <td>@mdo</td>
     </tr>
+    ?>
   </tbody>
 </table>
 
