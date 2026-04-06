@@ -9,9 +9,10 @@
 }
 
 .nav-link {
-    font-weight: 600;
+    font-weight: 600 !important;
+    margin-right: auto !important;
 }
 
 .nav-link.active {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
