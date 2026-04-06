@@ -7,3 +7,11 @@
     background-color: blueviolet;
     font-family: var(--text-font);
 }
+
+.nav-link {
+    font-weight: 600;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
